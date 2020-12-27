@@ -1,0 +1,148 @@
+.t-r {
+  display: -webkit-inline-box;
+}
+.mt-100 {
+  margin-top: 100px;
+}
+.title-feature {
+  display: block;
+  position: absolute;
+  right: 0;
+  margin-top: 16px !important;
+  padding: 0px !important;
+  width: 25%;
+}
+.des-feature1 {
+  display: block;
+  position: absolute;
+  right: 0;
+  margin-top: 15px;
+}
+.input-feature {
+  margin-right: 40px;
+  width: 75%;
+  margin-top: 5px;
+}
+.order-detail-button {
+  padding: 2px;
+  margin-top: 1rem !important;
+}
+.order-detail-text-right {
+  text-align: right !important;
+}
+.td-actions {
+  margin-top: 0rem;
+}
+.order-status {
+  display: block;
+}
+.form-check-label span {
+  right: -1px;
+}
+.form-check-label {
+  padding-right: 25px !important;
+}
+.post-tracking {
+  display: inline-block;
+}
+.alert-button {
+  box-shadow: aqua;
+}
+.custom-ui {
+  direction: rtl;
+  text-align: center !important;
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.23) 0px 20px 75px;
+  color: rgb(10, 10, 10);
+  padding: 40px;
+  background: rgb(255, 255, 255);
+  display: block;
+}
+.custom-ui button {
+  width: 160px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-image: initial;
+  margin: 10px;
+  background: none;
+}
+.custom-ui i {
+  font-size: 100px;
+  color: rgb(255, 127, 52);
+}
+.sidebar .logo a.logo-mini {
+  width: 40px !important;
+}
+.sidebar .logo a.logo-normal {
+  margin-right: 5px;
+}
+.bmd-form-group [class*=" bmd-label"],
+.bmd-form-group [class^="bmd-label"] {
+  position: relative !important;
+}
+@media screen and (max-width: 767px) {
+  .login-page .container {
+    padding-top: 0px !important;
+  }
+}
+.page-header footer {
+  height: auto;
+}
+.MTablePaginationInner-root-14 {
+  direction: ltr !important;
+}
+.MuiButtonBase-root.MuiTableSortLabel-root.Mui-disabled {
+  visibility: hidden;
+}
+.MuiTableCell-root.MuiTableCell-head.MTableHeader-header-13.MuiTableCell-alignLeft {
+  text-align: center;
+}
+@font-face {
+  font-family: iransans;
+  src: url("/fonts/iransans-regular.woff");
+}
+.MuiTypography-root.MuiTypography-h6 {
+  font-family: iransans !important;
+}
+.c-w-200 {
+  min-width: 200px !important;
+}
+@media screen and (max-width: 440px) {
+  .c-w-200 {
+    min-width: auto !important;
+  }
+}
+.filter-option-inner-inner {
+  text-align: right !important;
+}
+.comment-link {
+  cursor: pointer;
+}
+.notification-count {
+  position: absolute;
+  left: 25px;
+}
+.MuiTableCell-root
+  .MuiTableCell-head
+  .MTableHeader-header-13
+  .MuiTableCell-alignLeft {
+  text-align: center !important;
+}
+.MuiButtonBase-root .MuiTableSortLabel-root {
+  text-align: center !important;
+}
+.w-90-lg {
+  width: 90% !important;
+}
+.prices-webDetail {
+  width: 129%;
+  transform: translateX(45px);
+}
+.jss14 {
+  direction: ltr;
+}

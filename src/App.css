@@ -1,0 +1,18 @@
+@font-face {
+  font-family: iransans-regular;
+  src: url(/src/fonts/iransans-regular.woff);
+}
+@font-face {
+  font-family: iransans-bold;
+  src: url(/src/fonts/iransans-bold.woff);
+}
+@font-face {
+  font-family: B NAZANIN;
+  src: url(/src/fonts/B-NAZANIN.TTF);
+}
+.ir-r {
+  font-family: iransans-regular;
+}
+.ir-b {
+  font-family: iransans-bold;
+}
