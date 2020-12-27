@@ -84,10 +84,10 @@ export class OrderDetail extends Component {
   async validationInput() {
     const fullNameEmpty = await validator.isEmpty(this.state.order.fullName);
     const mobileEmpty = await validator.isEmpty(this.state.order.mobile);
-    const addressEmpty = await validator.isEmpty(this.state.order.address);
-    const postCodeEmpty = await validator.isEmpty(this.state.order.postCode);
-    const areaEmpty = await validator.isEmpty(this.state.order.area);
-    const cityEmpty = await validator.isEmpty(this.state.order.city);
+    // const addressEmpty = await validator.isEmpty(this.state.order.address);
+    // const postCodeEmpty = await validator.isEmpty(this.state.order.postCode);
+    // const areaEmpty = await validator.isEmpty(this.state.order.area);
+    // const cityEmpty = await validator.isEmpty(this.state.order.city);
     const mobileType = await validator.isMobilePhone(
       this.state.order.mobile,
       "fa-IR"
@@ -101,30 +101,30 @@ export class OrderDetail extends Component {
     if (mobileType) {
       this.setState({ mobileTypeErr: false, mobileErr: false });
     } else this.setState({ mobileTypeErr: true });
-    if (addressEmpty) {
-      this.setState({ addressErr: true });
-    } else this.setState({ addressErr: false });
-    if (postCodeEmpty) {
-      this.setState({ postCodeErr: true });
-    } else this.setState({ postCodeErr: false });
-    if (areaEmpty) {
-      this.setState({ areaErr: true });
-    } else this.setState({ areaErr: false });
-    if (cityEmpty) {
-      this.setState({ cityErr: true });
-    } else this.setState({ cityErr: false });
-    if (this.state.order.postCode.length !== 10) {
-      this.setState({ zipCodeTypeErr: true });
-    } else this.setState({ zipCodeTypeErr: false });
+    // if (addressEmpty) {
+    //   this.setState({ addressErr: true });
+    // } else this.setState({ addressErr: false });
+    // if (postCodeEmpty) {
+    //   this.setState({ postCodeErr: true });
+    // } else this.setState({ postCodeErr: false });
+    // if (areaEmpty) {
+    //   this.setState({ areaErr: true });
+    // } else this.setState({ areaErr: false });
+    // if (cityEmpty) {
+    //   this.setState({ cityErr: true });
+    // } else this.setState({ cityErr: false });
+    // if (this.state.order.postCode.length !== 10) {
+    //   this.setState({ zipCodeTypeErr: true });
+    // } else this.setState({ zipCodeTypeErr: false });
     if (
       !fullNameEmpty &&
       !mobileEmpty &&
-      mobileType &&
-      !addressEmpty &&
-      !postCodeEmpty &&
-      !areaEmpty &&
-      !cityEmpty &&
-      !this.state.zipCodeTypeErr
+      mobileType
+      // !addressEmpty &&
+      // !postCodeEmpty &&
+      // !areaEmpty &&
+      // !cityEmpty &&
+      // !this.state.zipCodeTypeErr
     ) {
       this.setState({ isValid: true });
     } else this.setState({ isValid: false, loading: false });
@@ -363,7 +363,7 @@ export class OrderDetail extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="row">
+                {/* <div className="row">
                   <label className="col-sm-2 col-form-label ir-r order-detail-text-right">
                     قیمت:
                   </label>
@@ -375,6 +375,7 @@ export class OrderDetail extends Component {
                     </div>
                   </div>
                 </div>
+              */}
                 <div className="row">
                   <label className="col-sm-2 col-form-label ir-r order-detail-text-right">
                     تاریخ ثبت:
@@ -409,7 +410,7 @@ export class OrderDetail extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="row">
+                {/* <div className="row">
                   <label className="col-sm-2 col-form-label ir-r order-detail-text-right">
                     آدرس:
                   </label>
@@ -530,10 +531,10 @@ export class OrderDetail extends Component {
                           name="postCode"
                           onChange={this.changeHandler.bind(this)}
                         />
-                      )}
+                      )} 
                     </div>
-                  </div>
-                  <div className="col-sm-4 td-actions ">
+                  </div>*/}
+                {/* <div className="col-sm-4 td-actions ">
                     <button
                       type="button"
                       rel="tooltip"
@@ -568,6 +569,7 @@ export class OrderDetail extends Component {
                       <i className="material-icons">done</i>
                     </button>
                   </div>
+                
                 </div>
                 {this.state.postCodeErr ? (
                   <div className="row">
@@ -585,7 +587,7 @@ export class OrderDetail extends Component {
                       </small>
                     </div>
                   )
-                )}
+                )}*/}
                 <div className="row">
                   <label className="col-sm-2 col-form-label ir-r order-detail-text-right">
                     وضعیت سفارش:
